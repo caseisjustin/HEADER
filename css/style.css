@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.container{
+    max-width: 1550px;
+    width: 100%;
+    margin: 0 auto;
+}
+.row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+.list{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0 20px 0 0;
+}
+.logo{
+    margin: 0 0 0 10px;
+    color: gold;
+}
+li a{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+}
+li a:hover{
+    font-size: 16px;
+    color: green;
+    transition: .5s;
+}
+.banner{
+    background: url("https://static.demilked.com/wp-content/uploads/2021/01/600fe723286b7-motivational-illustrations-encouragement-positivity-society-success-pictures-coverimage.jpg")
+    center / cover no-repeat;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    width: 100%;
+    height: 90vh;
+}
+.banner_content{
+    color: antiquewhite;
+}
+.cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    margin: 10px;
+}
+.card{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+}
+.card_image{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    object-fit: fill;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50%;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+.click{
+    width: 100%;
+    background-color: blue;
+}
+.footer_list{
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+.menu{
+    display: none;
+}
+@media (max-width: 768px){
+    .list{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        color: white;
+        font-size: 50px;
+        text-align: center;
+        margin: 0 20px 0 0;
+    }
+}
